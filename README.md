@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.1.
 
-https://raw.githubusercontent.com/boby177/Angular-Udemy/section-1-and-2/thumb-img.png
+![thumb-img] (https://raw.githubusercontent.com/boby177/Angular-Udemy/section-1-and-2/thumb-img.png)
 
 ## Development server
 
