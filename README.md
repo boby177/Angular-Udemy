@@ -1,6 +1,7 @@
 # MyFirstApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+![img](https://raw.githubusercontent.com/boby177/Angular-Udemy/Section-6/src/thumb-img/thumb-img2.png)
 
 ## Development server
 
