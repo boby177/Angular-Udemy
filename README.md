@@ -1,6 +1,8 @@
-# MyFirstApp
+# Assignment implement reactive forms
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+
+![thumb](https://raw.githubusercontent.com/boby177/Angular-Udemy/Section-15-Assignment/Screenshot_5.png)
 
 ## Development server
 
