@@ -1,6 +1,8 @@
-# MyFirstApp
+# Adding new recipe and edit recipe features 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+
+![img](https://raw.githubusercontent.com/boby177/Angular-Udemy/Section-16/Screenshot_7.png)
 
 ## Development server
 
