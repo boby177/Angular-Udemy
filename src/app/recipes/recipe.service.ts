@@ -8,23 +8,29 @@ import { Recipe } from "./recipe.model";
 export class RecipeService {
     recipesChanged = new Subject<Recipe[]>()
 
-    recipes: Recipe[] = [
-        new Recipe('Nasi Goreng Recipe', 
-        'This is nasi goreng', 
-        'https://awsimages.detik.net.id/community/media/visual/2021/08/25/resep-nasi-goreng-sosis-ala-warung-bhakti_43.jpeg?w=700&q=90', [
-            new Ingredient('Rice', 1),
-            new Ingredient('Egg', 2)
-        ]),
-        new Recipe('Batagor Recipe', 
-        'This is batagor', 
-        'https://dikemas.com/uploads/2019/05/resep-batagor-enak-yang-bisa-kamu-jadikan-ladang-bisnis.jpg',[
-            new Ingredient('Flour', 2),
-            new Ingredient('Tofu', 10)
-        ])
-    ]
+    // recipes: Recipe[] = [
+    //     new Recipe('Nasi Goreng Recipe', 
+    //     'This is nasi goreng', 
+    //     'https://awsimages.detik.net.id/community/media/visual/2021/08/25/resep-nasi-goreng-sosis-ala-warung-bhakti_43.jpeg?w=700&q=90', [
+    //         new Ingredient('Rice', 1),
+    //         new Ingredient('Egg', 2)
+    //     ]),
+    //     new Recipe('Batagor Recipe', 
+    //     'This is batagor', 
+    //     'https://dikemas.com/uploads/2019/05/resep-batagor-enak-yang-bisa-kamu-jadikan-ladang-bisnis.jpg',[
+    //         new Ingredient('Flour', 2),
+    //         new Ingredient('Tofu', 10)
+    //     ])
+    // ]
+    recipes: Recipe[] = []
 
     constructor(private slService: ShoppingListService) {
         
+    }
+
+    setRecipes(recipes: Recipe[]){
+        this.recipes = recipes
+        this.recipesChanged.next(this.recipes.slice())
     }
 
     getRecipes() {
