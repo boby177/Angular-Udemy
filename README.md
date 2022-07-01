@@ -1,6 +1,8 @@
-# MyFirstApp
+# Adding authentication for login and sign up
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.0.
+
+![thumb](https://raw.githubusercontent.com/boby177/Angular-Udemy/Section-20/Screenshot_2.png)
 
 ## Development server
 
