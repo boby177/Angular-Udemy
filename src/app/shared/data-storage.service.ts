@@ -28,18 +28,18 @@ export class DataStorageServer {
   fetchRecipes() {
     return this.http
       .get<Recipe[]>(
-        "https://ng-recipe-book-a1897-default-rtdb.asia-southeast1.firebasedatabase.app/recipes.json"
+        'https://ng-recipe-book-a1897-default-rtdb.asia-southeast1.firebasedatabase.app/recipes.json'
       )
       .pipe(
-        map((recipes) => {
-          return recipes.map((recipe) => {
+        map(recipes => {
+          return recipes.map(recipe => {
             return {
               ...recipe,
-              ingredients: recipe.ingredients ? recipe.ingredients : [],
+              ingredients: recipe.ingredients ? recipe.ingredients : []
             };
           });
         }),
-        tap((recipes) => {
+        tap(recipes => {
           this.recipeService.setRecipes(recipes);
         })
       );
